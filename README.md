@@ -6,7 +6,7 @@ Live: https://steven-ych.github.io/
 
 ## Contents
 
-- Featured DualSource demo slot (`assets/demo/dualsource-demo.mp4` — add when recorded)
+- Featured DualSource demo video (`assets/demo/dualsource-demo.mp4`)
 - Work grouped as AI · DE/OCR · Analytics · Public code
 - Architecture strips and delivery approach
 - Contact (email / LinkedIn / GitHub). Phone omitted on purpose.
@@ -15,11 +15,10 @@ Live: https://steven-ych.github.io/
 
 Open `index.html` or serve the folder with any static server.
 
-## Demo video drop-in
+## Demo video
 
-1. Record DualSource at `http://localhost:5173` (fictional seed data only).
-2. Save as `assets/demo/dualsource-demo.mp4`.
-3. Commit/push — the page auto-reveals the `<video>` when the file exists.
+Source recording: OneDrive `Steven/ref/dualsource_agent_demo.mp4` (compressed for Pages).
+Live embed: https://steven-ych.github.io/#demo
 
 ## Notes
 

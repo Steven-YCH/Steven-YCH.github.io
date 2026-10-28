@@ -89,18 +89,10 @@
 
         <div class="demo-panel">
           <div class="demo-media" id="demo-media">
-            <video id="demo-video" controls playsinline preload="metadata" poster="" hidden>
+            <video id="demo-video" controls playsinline preload="metadata" poster="assets/demo/dualsource-demo-poster.jpg">
               <source src="assets/demo/dualsource-demo.mp4" type="video/mp4" />
               Your browser does not support embedded video.
             </video>
-            <div class="demo-placeholder" id="demo-placeholder">
-              <p class="demo-kicker">Video coming soon</p>
-              <p>Drop <code>assets/demo/dualsource-demo.mp4</code> after you record the local DualSource walkthrough. Until then, explore the repository.</p>
-              <div class="demo-actions">
-                <a class="btn btn-primary" href="https://github.com/Steven-YCH/dualsource-data-agent" target="_blank" rel="noopener">View DualSource repo</a>
-                <a class="btn btn-ghost" href="#architectures">See architecture</a>
-              </div>
-            </div>
           </div>
           <aside class="demo-notes">
             <h3>What the demo shows</h3>
@@ -110,7 +102,10 @@
               <li>Chart + citation chips in the answer</li>
               <li>Optional Tavily web fallback when internal data is thin</li>
             </ol>
-            <p class="fineprint">Suggested cuts: 60–90s for this page · 3–5 min for interviews.</p>
+            <div class="demo-actions" style="margin-top:1.1rem">
+              <a class="btn btn-primary" href="https://github.com/Steven-YCH/dualsource-data-agent" target="_blank" rel="noopener">View DualSource repo</a>
+            </div>
+            <p class="fineprint">~62s walkthrough · fictional seed data only · no client production data</p>
           </aside>
         </div>
       </div>
