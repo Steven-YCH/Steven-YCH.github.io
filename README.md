@@ -1,16 +1,21 @@
 # steven-ych.github.io
 
-Personal portfolio site for **Steven Yung** — Data & AI, Hong Kong.
+Personal portfolio site for **Steven Yung** — Data & AI delivery.
 
-Live: https://steven-ych.github.io/
+**Canonical URL:** https://steven-ych.github.io/
 
-## What’s on the site
+Use this single link on CV, LinkedIn and applications.
+
+## Sections
 
 - About + career timeline
-- Selected industry work and open-source projects
-- DualSource demo video
-- How I work / contact
+- Selected industry work, AI agents, and a short side-code strip
+- DualSource demo video (`assets/demo/`)
+- VHIS architecture one-pager (`assets/cases/vhis-architecture-onepager.png`)
+- How I work + contact (email / phone / LinkedIn / GitHub)
 
-## Local preview
+## Notes
 
-Open `index.html`, or serve the folder with any static server.
+- No CV PDF hosted here (by request)
+- Live "Try DualSource" reserved until a hosted demo URL exists
+- Company identifiers and sensitive metrics are masked
