@@ -264,6 +264,13 @@ h1 {
   font-weight: 500;
 }
 
+.contact-inner h2.contact-tagline {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.45;
+  color: var(--muted);
+  font-weight: 500;
+}
+
 .section-copy {
   color: var(--muted);
   margin: 0.9rem 0 0;
