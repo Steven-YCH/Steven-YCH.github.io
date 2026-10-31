@@ -816,3 +816,24 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== inline request-flow SVG ===== */
+.figure-flow {
+  overflow: hidden;
+}
+
+.flow-svg-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  background: #fffdf8;
+}
+
+.flow-svg {
+  display: block;
+  width: 100%;
+  min-width: 860px;
+  height: auto;
+}

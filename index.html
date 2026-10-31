@@ -150,8 +150,104 @@
           </aside>
         </div>
 
-        <figure class="figure-block">
-          <img src="assets/cases/dualsource-sequence.png" alt="DualSource Data Agent chat request sequence across frontend, backend, chat history, agent and tools" loading="lazy" />
+        <figure class="figure-block figure-flow">
+          <div class="flow-svg-wrap" role="img" aria-label="DualSource Data Agent chat request sequence across frontend, backend, chat history, agent and parallel tools">
+            <svg class="flow-svg" viewBox="0 0 1400 1120" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Sans, system-ui, sans-serif">
+              <rect width="1400" height="1120" fill="#fffdf8" rx="16"/>
+              <text x="36" y="42" font-size="22" font-weight="700" fill="#16212b">DualSource Data Agent — Chat Request Flow</text>
+              <text x="36" y="68" font-size="13" fill="#5b6670">Local warehouse SQL and live web search run as parallel tools</text>
+
+              <rect x="28" y="90" width="210" height="990" rx="14" fill="#f4f1ea" stroke="rgba(22,33,43,0.12)"/>
+              <rect x="252" y="90" width="250" height="990" rx="14" fill="rgba(15,92,76,0.08)" stroke="#0f5c4c"/>
+              <rect x="516" y="90" width="210" height="990" rx="14" fill="rgba(196,92,38,0.08)" stroke="#c45c26"/>
+              <rect x="740" y="90" width="270" height="990" rx="14" fill="rgba(15,92,76,0.14)" stroke="#0f5c4c"/>
+              <rect x="1024" y="90" width="348" height="990" rx="14" fill="#ebe6dc" stroke="rgba(22,33,43,0.16)"/>
+
+              <text x="133" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#16212b">React Frontend</text>
+              <text x="377" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#0f5c4c">FastAPI Backend</text>
+              <text x="621" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#c45c26">Chat History</text>
+              <text x="621" y="138" text-anchor="middle" font-size="12" fill="#5b6670">(Unity Catalog)</text>
+              <text x="875" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#0f5c4c">AI Agent</text>
+              <text x="875" y="138" text-anchor="middle" font-size="12" fill="#5b6670">Model Serving / LangGraph</text>
+              <text x="1198" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#16212b">Data &amp; Search Tools</text>
+
+              <rect x="48" y="170" width="170" height="58" rx="10" fill="#fffdf8" stroke="#5b6670"/>
+              <text x="133" y="204" text-anchor="middle" font-size="13" font-weight="600" fill="#16212b">1. User Sends Message</text>
+
+              <rect x="272" y="170" width="210" height="58" rx="10" fill="#0f5c4c"/>
+              <text x="377" y="192" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf8">2. Receive Chat Request</text>
+              <text x="377" y="212" text-anchor="middle" font-size="12" fill="#d7ebe4">Resolve SSO Identity</text>
+
+              <rect x="536" y="280" width="170" height="58" rx="10" fill="#fffdf8" stroke="#c45c26"/>
+              <text x="621" y="302" text-anchor="middle" font-size="13" font-weight="600" fill="#16212b">3. Load Conversation</text>
+              <text x="621" y="322" text-anchor="middle" font-size="12" fill="#5b6670">History</text>
+
+              <rect x="272" y="390" width="210" height="58" rx="10" fill="#0f5c4c"/>
+              <text x="377" y="412" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf8">4. Invoke AI Agent</text>
+              <text x="377" y="432" text-anchor="middle" font-size="12" fill="#d7ebe4">Message + Context</text>
+
+              <rect x="760" y="390" width="230" height="58" rx="10" fill="#0b463a"/>
+              <text x="875" y="412" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf8">5. Interpret Request</text>
+              <text x="875" y="432" text-anchor="middle" font-size="12" fill="#d7ebe4">Select Tools</text>
+
+              <rect x="1048" y="500" width="300" height="72" rx="10" fill="#fffdf8" stroke="#c45c26" stroke-width="2"/>
+              <text x="1198" y="526" text-anchor="middle" font-size="13" font-weight="700" fill="#c45c26">6a. Wren SQL MCP</text>
+              <text x="1198" y="548" text-anchor="middle" font-size="12" fill="#5b6670">Query via SQL Warehouse · Gold Data</text>
+
+              <rect x="1048" y="620" width="300" height="64" rx="10" fill="#fffdf8" stroke="#0f5c4c" stroke-width="2"/>
+              <text x="1198" y="646" text-anchor="middle" font-size="13" font-weight="700" fill="#0f5c4c">6b. Tavily Web Search</text>
+              <text x="1198" y="666" text-anchor="middle" font-size="12" fill="#5b6670">Retrieve Online Sources · Parallel</text>
+
+              <rect x="760" y="740" width="230" height="66" rx="10" fill="#0b463a"/>
+              <text x="875" y="766" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf8">7. Synthesize Answer</text>
+              <text x="875" y="786" text-anchor="middle" font-size="12" fill="#d7ebe4">Insights · Tables · Charts · Sources</text>
+
+              <rect x="272" y="850" width="210" height="66" rx="10" fill="#0f5c4c"/>
+              <text x="377" y="876" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf8">8. Prepare Response</text>
+              <text x="377" y="896" text-anchor="middle" font-size="12" fill="#d7ebe4">Excel Export if Requested</text>
+
+              <rect x="536" y="970" width="170" height="58" rx="10" fill="#fffdf8" stroke="#c45c26"/>
+              <text x="621" y="992" text-anchor="middle" font-size="13" font-weight="600" fill="#16212b">9. Save Conversation</text>
+              <text x="621" y="1012" text-anchor="middle" font-size="12" fill="#5b6670">Turn</text>
+
+              <rect x="48" y="980" width="170" height="70" rx="10" fill="#fffdf8" stroke="#5b6670"/>
+              <text x="133" y="1006" text-anchor="middle" font-size="13" font-weight="600" fill="#16212b">10. Display Answer</text>
+              <text x="133" y="1026" text-anchor="middle" font-size="11" fill="#5b6670">Charts · Tables · Sources</text>
+
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z" fill="#5b6670"/>
+                </marker>
+                <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z" fill="#0f5c4c"/>
+                </marker>
+                <marker id="arrow-warm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z" fill="#c45c26"/>
+                </marker>
+              </defs>
+
+              <path d="M218 199 H272" stroke="#0f5c4c" stroke-width="1.8" fill="none" marker-end="url(#arrow-teal)"/>
+              <path d="M482 199 H536" stroke="#c45c26" stroke-width="1.8" fill="none" marker-end="url(#arrow-warm)"/>
+              <path d="M536 338 H482 V390" stroke="#c45c26" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#arrow-warm)"/>
+              <text x="500" y="365" font-size="11" fill="#c45c26">Context</text>
+              <path d="M482 419 H760" stroke="#0f5c4c" stroke-width="2" fill="none" marker-end="url(#arrow-teal)"/>
+
+              <path d="M990 410 H1020 V536 H1048" stroke="#c45c26" stroke-width="1.8" fill="none" marker-end="url(#arrow-warm)"/>
+              <text x="1000" y="480" font-size="11" fill="#c45c26">Parallel</text>
+              <path d="M990 430 H1020 V652 H1048" stroke="#0f5c4c" stroke-width="1.8" fill="none" marker-end="url(#arrow-teal)"/>
+
+              <path d="M1348 572 V773 H990" stroke="#c45c26" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#arrow-warm)"/>
+              <text x="1280" y="700" font-size="11" fill="#c45c26">Query results</text>
+              <path d="M1048 652 H1008 V757 H990" stroke="#0f5c4c" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#arrow-teal)"/>
+              <text x="1010" y="700" font-size="11" fill="#0f5c4c">Search results</text>
+
+              <path d="M875 806 V883 H482" stroke="#0f5c4c" stroke-width="1.8" fill="none" marker-end="url(#arrow-teal)"/>
+              <text x="700" y="840" font-size="11" fill="#0f5c4c">Agent response</text>
+              <path d="M482 900 H516 V999" stroke="#c45c26" stroke-width="1.6" fill="none" marker-end="url(#arrow-warm)"/>
+              <path d="M272 883 H210 V980" stroke="#5b6670" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+              <text x="175" y="930" font-size="11" fill="#5b6670">Return</text>
+            </svg>
+          </div>
           <figcaption>Request flow — React frontend, FastAPI backend, Unity Catalog chat history, LangGraph agent, and parallel SQL / web tools.</figcaption>
         </figure>
       </div>
