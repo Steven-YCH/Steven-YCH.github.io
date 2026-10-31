@@ -8,14 +8,19 @@ Use this single link on CV, LinkedIn and applications.
 
 ## Sections
 
-- About + career timeline
-- Selected industry work, AI agents, and a short side-code strip
+- About + fields (aviation, retail loyalty, property CRM, telecom)
+- Featured DualSource demo + request-flow diagram
+- Selected industry work, AI agents, and side-code
+- How I work (discover → collect & shape → design & build → land & iterate)
+- Contact (email)
+
+## Assets
+
 - DualSource demo video (`assets/demo/`)
-- VHIS architecture one-pager (`assets/cases/vhis-architecture-onepager.png`)
-- How I work + contact (email / phone / LinkedIn / GitHub)
+- Case diagrams (`assets/cases/`): DualSource sequence, VHIS agent, treasury automation, campaign loop, district map
 
 ## Notes
 
-- No CV PDF hosted here (by request)
-- Live "Try DualSource" reserved until a hosted demo URL exists
+- No CV PDF hosted here
+- Exact job titles / years intentionally omitted on the public site
 - Company identifiers and sensitive metrics are masked

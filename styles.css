@@ -720,3 +720,99 @@ h1 {
   cursor: default;
   user-select: none;
 }
+
+
+/* ===== portfolio refresh Oct 2026 ===== */
+.fields {
+  background: rgba(255, 253, 248, 0.7);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 1.25rem 1.35rem 1.4rem;
+}
+
+.fields-label {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.field-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.field-list li {
+  display: grid;
+  gap: 0.2rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--accent);
+}
+
+.field-list strong {
+  font-size: 1rem;
+}
+
+.field-list span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.figure-block {
+  margin: 1.5rem 0 0;
+  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+}
+
+.figure-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.figure-block figcaption,
+.card-figure figcaption {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card-figure {
+  margin: 0.35rem 0 0;
+  padding: 0;
+}
+
+.card-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.approach-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  .approach-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .approach-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
